@@ -15,17 +15,17 @@ export default class addItem extends HTMLElement {
     <ion-content>
       <ion-item>
         <ion-label position="stacked">Name</ion-label>
-        <ion-input  placeholder="Name" id="" type="text" autofocus=true enterkeyhint="next" inputmode="text" required=true></ion-input>
+        <ion-input placeholder="Name" id="" type="text" autofocus=true enterkeyhint="next" inputmode="text" required=true></ion-input>
       </ion-item>
         
       <ion-item>
         <ion-label position="stacked">Contact</ion-label>
-        <ion-input placeholder="Phone Number" id="" type="tel" autofocus=true enterkeyhint="done" inputmode="tel" required=true></ion-input>
+        <ion-input placeholder="Phone Number" id="" type="tel" enterkeyhint="next" inputmode="tel" required=true></ion-input>
       </ion-item>
       
       <ion-item>
         <ion-label position="stacked">Address</ion-label>
-        <ion-textarea></ion-textarea>
+        <ion-textarea placeholder="Address" id="" enterkeyhint="next" required=true></ion-textarea>
       </ion-item>
       
       <ion-item>
@@ -47,7 +47,7 @@ export default class addItem extends HTMLElement {
       
       <ion-item>
         <ion-label position="stacked">Area</ion-label>
-        <ion-input></ion-input>
+        <ion-input autocomplete="on" placeholder="Area" id="" type="text" enterkeyhint="done" inputmode="text" required=true></ion-input>
       </ion-item>
           
     </ion-content>
@@ -59,9 +59,10 @@ export default class addItem extends HTMLElement {
 
     const btnSubmit = document.getElementById("btnSubmit");
     
+    
 
     btnSubmit.addEventListener("click", () => {
-        const memoInput = document.getElementById('input-memo');
+        // const memoInput = document.getElementById('input-memo');
         
     });
   }
